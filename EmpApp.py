@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import flask, render_template, request
 from pymysql import connections
 import os
 import boto3
 from config import *
 
-app = Flask(__name__)
+app = flask(__name__)
 
 bucket = custombucket
 region = customregion
